@@ -49,7 +49,9 @@ Step 5:
 
 ❗ copy and save the one-time code generated to a text editor of your choice, one-time code is required for the initial activation ❗
 
-## TASK 3: SSH to your Proxmox Virtual Environment instance with `root`:
+## TASK 3: Deploy the ATMOS Connector on Proxmox Virtual Environment:
+
+`ssh`as `root` to your Proxmox Virtual Environment instance and run following commands:
 
 Change directory to `root`:
 ```text
