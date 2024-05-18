@@ -1,6 +1,6 @@
 [Promox Virtual Environment]: https://www.proxmox.com/en/
 [Axis Security]: https://www.axissecurity.com/schedule-a-demo/
-[Axis Securtiy Workspace]: https://auth.axissecurity.com/
+[Axis Security Workspace]: https://auth.axissecurity.com/
 
 # ✅ Prerequisites
 
@@ -10,7 +10,7 @@
 
 # Overview
 
-Deploy Atmos Connector on Promox Virtual Environment
+Deploy Atmos Connector on Proxmox Virtual Environment
 - Atmos Connector Version: 3.51.1
 - Proxmox Virtual Environment Version: 8.2.2
 
@@ -65,14 +65,24 @@ Change directory to `ova-import`:
 cd ova-import/
 ```
 
-Download Axis Connector OVA:
+Download Atmos Connector OVA:
 ```text
 wget https://download.axissecurity.com/ova/axis-connector-ova-rocky-linux/axis-connector-rocky-linux-9-nci.ova
 ```
 
-Extract Axis Connector OVA:
+Extract Atmos Connector OVA:
 ```text
 tar xvf axis-connector-rocky-linux-9-nci.ova 
+```
+
+Create a virtual machine based on the file with the extension `.ovf`:
+```text
+qm importovf 999 axis-connector-rocky-linux-9-nci-docker-v3.51.1.ovf local-lvm  --format qcow2
+```
+
+Attach the Atmos Connector disk to the new VM:
+```text
+qm importdisk 999 axis-connector-rocky-linux-9-nci-docker-v3.51.1-disk1.vmdk local-lvm --format qcow2
 ```
 
 
