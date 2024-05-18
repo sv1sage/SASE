@@ -41,13 +41,13 @@ Step 4:
 
 ![Step 4](./images/new-connector-4.png)
 
-❗ right-click on `Download OVA` and copy link address and save it to a text editor of your choice❗
+❗right-click on `Download OVA` and copy link address and save it to a text editor of your choice❗
 
 Step 5:
 
 ![Step 5](./images/new-connector-5.png)
 
-❗ click on `copy` and save the one-time code generated to a text editor of your choice, one-time code is required for the initial activation ❗
+❗click on `copy` and save the one-time code generated to a text editor of your choice, one-time code is required for the initial activation❗
 
 ## TASK 3: Deploy the Atmos Connector on Proxmox Virtual Environment:
 
@@ -99,7 +99,7 @@ warning: unable to parse the VM name in this OVF manifest, generating a default 
 invalid host ressource /disk/vmdisk1, skipping
 ```
 
-Attach the Atmos Connector disk to the new VM:
+### Attach the Atmos Connector disk to the new VM:
 ```text
 qm importdisk 999 axis-connector-rocky-linux-9-nci-docker-v3.51.1-disk1.vmdk local-lvm --format qcow2
 ```
