@@ -1,4 +1,4 @@
-[Promox Virtual Environment]: https://www.proxmox.com/en/
+[Proxmox Virtual Environment]: https://www.proxmox.com/en/
 [Axis Security]: https://www.axissecurity.com/schedule-a-demo/
 [Axis Security Workspace]: https://auth.axissecurity.com/
 
@@ -6,7 +6,7 @@
 
 - [Axis Security Workspace]
 
-- [Promox Virtual Environment]
+- [Proxmox Virtual Environment]
 
 # Overview
 
@@ -51,7 +51,7 @@ Step 5:
 
 Step 6:
 
-![Step 6](./images/new-connector-5.png)
+![Step 6](./images/new-connector-6.png)
 
 🔥 COMMIT CHANGES 🔥
 
@@ -86,13 +86,13 @@ tar xvf axis-connector-rocky-linux-9-nci.ova
 
 ### Create a virtual machine based on the file with the extension `.ovf`:
 ```text
-qm importovf 999 axis-connector-rocky-linux-9-nci-docker-v3.51.1.ovf local-lvm  --format qcow2
+qm importovf 999 axis-connector-rocky-linux-9-nci-docker-v3.51.1.ovf local-lvm --format qcow2
 ```
 💡Note: 
 - `999`is the VM ID feel free to change the value.
 - `local-lvm`is the default storage ID, change the value to match your setup.
 
-🔨 Following `warning`messages can be ignored:
+🔨 Following `warning` messages can be ignored:
 ```text
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
@@ -131,7 +131,7 @@ Step 4:
 ![Step 4](./images/gui-vm-settings-4.png)
 
 💡Note: 
-- change the `Bridge`and `VLAN Tag:`values to match your network setup
+- change the `Bridge` and `VLAN Tag:` values to match your network setup
 
 Step 5:
 
@@ -155,7 +155,9 @@ Step 9:
 
 ## TASK 4: Deploy the Atmos Connector on Proxmox Virtual Environment:
 
-Connect to the VM using Proxmox Virtual Environment `>_ Console` and complete the login with username `axis`and password `axis`.
+Start the VM and connect using Proxmox Virtual Environment `>_ Console` and complete the login with username `axis` and password `axis`.
+
+❗if you are using DHCP make sure that the ATMOS Connector IP address is reserved by your DHCP-Server, alternatively configure a static IP before running the one-time code❗
 
 Run the one-time code generated in TASK 2 at Step 5.
 
@@ -175,3 +177,5 @@ Step 3:
 ![Step 3](./images/atmos-connector-activation-3.png)
 
 ## 🚀 ATMOS CONNECTOR UP AND RUNNING!
+
+## OPTIONAL TASK 5: Change default username and password
