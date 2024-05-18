@@ -16,7 +16,10 @@ Deploy Atmos Connector on Proxmox Virtual Environment
 
 # 🚀 Installation
 
-## <span style="color:rgb(226, 116, 0);">TASK 1: Connect to the Management System of Axis Security:</span>
+<div style="color:rgb(226, 116, 0);">
+    ## TASK 1: Connect to the Management System of Axis Security:
+</div>
+
 
 ```text
 https://auth.axissecurity.com/
