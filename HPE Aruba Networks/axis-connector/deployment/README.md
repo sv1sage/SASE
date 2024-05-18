@@ -49,7 +49,7 @@ Step 5:
 
 ❗ copy and save the one-time code generated to a text editor of your choice, one-time code is required for the initial activation ❗
 
-## TASK 3: Deploy the ATMOS Connector on Proxmox Virtual Environment:
+## TASK 3: Deploy the Atmos Connector on Proxmox Virtual Environment:
 
 `ssh`as `root` to your Proxmox Virtual Environment instance and run following commands:
 
@@ -81,11 +81,14 @@ Create a virtual machine based on the file with the extension `.ovf`:
 ```text
 qm importovf 999 axis-connector-rocky-linux-9-nci-docker-v3.51.1.ovf local-lvm  --format qcow2
 ```
+💡Note: 
+- `999`is the VM ID feel free to change the value.
+- `local-lvm`is the default storage ID, change the value to match your setup.
 
 Attach the Atmos Connector disk to the new VM:
 ```text
 qm importdisk 999 axis-connector-rocky-linux-9-nci-docker-v3.51.1-disk1.vmdk local-lvm --format qcow2
 ```
-
+💡Note: if you changed the VM or storage ID, change the values to match your setup.
 
 ⚙️ 🔥 🔨 
