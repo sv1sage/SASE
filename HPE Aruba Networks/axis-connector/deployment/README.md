@@ -4,7 +4,7 @@
 
 # ✅ Prerequisites
 
-- [Axis Securtiy Workspace]
+- [Axis Security Workspace]
 
 - [Promox Virtual Environment]
 
