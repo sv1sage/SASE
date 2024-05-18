@@ -49,35 +49,36 @@ Step 5:
 
 ❗click on `copy` and save the one-time code generated to a text editor of your choice, one-time code is required for the initial activation❗
 
-## TASK 3: Deploy the Atmos Connector on Proxmox Virtual Environment:
+## TASK 3: Create a Virtual Machine for the Atmos Connector on Proxmox Virtual Environment:
 
 `ssh`as `root` to your Proxmox Virtual Environment instance and run following commands:
 
-Change directory to `root`:
+### Change directory to `root`:
 ```text
 cd /root
 ```
-Create directory `ova-import`:
+
+### Create directory `ova-import`:
 ```text
 mkdir ova-import
 ```
 
-Change directory to `ova-import`:
+### Change directory to `ova-import`:
 ```text
 cd ova-import/
 ```
 
-Download Atmos Connector OVA:
+### Download Atmos Connector OVA:
 ```text
 wget https://download.axissecurity.com/ova/axis-connector-ova-rocky-linux/axis-connector-rocky-linux-9-nci.ova
 ```
 
-Extract Atmos Connector OVA:
+### Extract Atmos Connector OVA:
 ```text
 tar xvf axis-connector-rocky-linux-9-nci.ova 
 ```
 
-Create a virtual machine based on the file with the extension `.ovf`:
+### Create a virtual machine based on the file with the extension `.ovf`:
 ```text
 qm importovf 999 axis-connector-rocky-linux-9-nci-docker-v3.51.1.ovf local-lvm  --format qcow2
 ```
@@ -85,7 +86,7 @@ qm importovf 999 axis-connector-rocky-linux-9-nci-docker-v3.51.1.ovf local-lvm  
 - `999`is the VM ID feel free to change the value.
 - `local-lvm`is the default storage ID, change the value to match your setup.
 
-🔨 Example output:
+🔨 Following `warning`messages can be ignored:
 ```text
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
@@ -104,6 +105,47 @@ invalid host ressource /disk/vmdisk1, skipping
 qm importdisk 999 axis-connector-rocky-linux-9-nci-docker-v3.51.1-disk1.vmdk local-lvm --format qcow2
 ```
 💡Note: if you changed the VM or storage ID, change the values to match your setup.
-🔨Confirm output: <span style="color:green;">Successfully imported disk as 'unused0:local-lvm:vm-999-disk-0
+
+### Switch to the Graphical User Interface of your Proxmox Virtual Environment instance and complete the virtual machine setup:
+
+Select the VM and follow these steps:
+
+![Step 1](./images/gui-vm-settings-1.png)
+
+Step 2:
+
+![Step 2](./images/gui-vm-settings-2.png)
+
+Step 3:
+
+![Step 3](./images/gui-vm-settings-3.png)
+
+Step 4:
+
+![Step 4](./images/gui-vm-settings-4.png)
+
+Step 5:
+
+![Step 5](./images/gui-vm-settings-5.png)
+
+Step 6:
+
+![Step 6](./images/gui-vm-settings-6.png)
+
+Step 7:
+
+![Step 7](./images/gui-vm-settings-7.png)
+
+Step 8:
+
+![Step 8](./images/gui-vm-settings-8.png)
+
+Step 9:
+
+![Step 9](./images/gui-vm-settings-9.png)
+
+## TASK 4: Deploy the Atmos Connector on Proxmox Virtual Environment:
+
+
 
 ⚙️ 🔥 🔨 
