@@ -104,27 +104,6 @@ invalid host ressource /disk/vmdisk1, skipping
 qm importdisk 999 axis-connector-rocky-linux-9-nci-docker-v3.51.1-disk1.vmdk local-lvm --format qcow2
 ```
 💡Note: if you changed the VM or storage ID, change the values to match your setup.
+🔨Confirm output: <span style="color:green;">Successfully imported disk as 'unused0:local-lvm:vm-999-disk-0
 
-🔨Example output:
-```text
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-importing disk 'axis-connector-rocky-linux-9-nci-docker-v3.51.1-disk1.vmdk' to VM 999 ...
-format 'qcow2' is not supported by the target storage - using 'raw' instead
-  Logical volume "vm-999-disk-0" created.
-transferred 0.0 B of 39.1 GiB (0.00%)
-transferred 400.0 MiB of 39.1 GiB (1.00%)
-transferred 800.0 MiB of 39.1 GiB (2.00%)
-.
-.
-.
-transferred 39.1 GiB of 39.1 GiB (100.00%)
-Successfully imported disk as 'unused0:local-lvm:vm-999-disk-0'
-```
 ⚙️ 🔥 🔨 
