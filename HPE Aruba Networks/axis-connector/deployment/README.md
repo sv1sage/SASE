@@ -47,7 +47,7 @@ Step 5:
 
 ![Step 5](./images/new-connector-5.png)
 
-❗ copy and save the one-time code generated to a text editor of your choice, one-time code is required for the initial activation ❗
+❗ click on `copy` and save the one-time code generated to a text editor of your choice, one-time code is required for the initial activation ❗
 
 ## TASK 3: Deploy the Atmos Connector on Proxmox Virtual Environment:
 
@@ -85,10 +85,46 @@ qm importovf 999 axis-connector-rocky-linux-9-nci-docker-v3.51.1.ovf local-lvm  
 - `999`is the VM ID feel free to change the value.
 - `local-lvm`is the default storage ID, change the value to match your setup.
 
+🔨 Example output:
+```text
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+warning: unable to parse the VM name in this OVF manifest, generating a default value
+invalid host ressource /disk/vmdisk1, skipping
+```
+
 Attach the Atmos Connector disk to the new VM:
 ```text
 qm importdisk 999 axis-connector-rocky-linux-9-nci-docker-v3.51.1-disk1.vmdk local-lvm --format qcow2
 ```
 💡Note: if you changed the VM or storage ID, change the values to match your setup.
 
+🔨Example output:
+```text
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+importing disk 'axis-connector-rocky-linux-9-nci-docker-v3.51.1-disk1.vmdk' to VM 999 ...
+format 'qcow2' is not supported by the target storage - using 'raw' instead
+  Logical volume "vm-999-disk-0" created.
+transferred 0.0 B of 39.1 GiB (0.00%)
+transferred 400.0 MiB of 39.1 GiB (1.00%)
+transferred 800.0 MiB of 39.1 GiB (2.00%)
+.
+.
+.
+transferred 39.1 GiB of 39.1 GiB (100.00%)
+Successfully imported disk as 'unused0:local-lvm:vm-999-disk-0'
+```
 ⚙️ 🔥 🔨 
