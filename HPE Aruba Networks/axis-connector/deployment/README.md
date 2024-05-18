@@ -36,6 +36,10 @@ https://auth.axissecurity.com/
 
 ![Step 4](./images/new-connector-4.png)
 
+❗ right-click on `Download OVA` and copy link address and save it to a text editor of your choice❗
+
+![Step 5](./images/new-connector-4.png)
+
 ❗ copy and save the one-time code generated to a text editor of your choice, one-time code is required for the initial activation ❗
 
 
