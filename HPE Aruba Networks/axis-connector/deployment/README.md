@@ -22,11 +22,8 @@ Deploy Atmos Connector on Promox Virtual Environment
 https://auth.axissecurity.com/
 ```
 
-## TASK 2: Naviagte to:
-`settings` ➡️ `connectors` 
-
-## TASK 3: Create Connector:
-`New Connector`
+## TASK 2: Create Connector:
+`settings` ➡️ `connectors` ➡️ `New Connector`
 
 Step 1:
 
@@ -43,11 +40,40 @@ Step 3:
 Step 4:
 
 ![Step 4](./images/new-connector-4.png)
+
 ❗ right-click on `Download OVA` and copy link address and save it to a text editor of your choice❗
 
 Step 5:
-![Step 5](./images/new-connector-4.png)
+
+![Step 5](./images/new-connector-5.png)
+
 ❗ copy and save the one-time code generated to a text editor of your choice, one-time code is required for the initial activation ❗
+
+## TASK 3: SSH to your Proxmox Virtual Environment instance with `root`:
+
+Change directory to `root`:
+```text
+cd /root
+```
+Create directory `ova-import`:
+```text
+mkdir ova-import
+```
+
+Change directory to `ova-import`:
+```text
+cd ova-import/
+```
+
+Download Axis Connector OVA:
+```text
+wget https://download.axissecurity.com/ova/axis-connector-ova-rocky-linux/axis-connector-rocky-linux-9-nci.ova
+```
+
+Extract Axis Connector OVA:
+```text
+tar xvf axis-connector-rocky-linux-9-nci.ova 
+```
 
 
 ⚙️ 🔥 🔨 
