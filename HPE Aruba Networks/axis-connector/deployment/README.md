@@ -28,9 +28,15 @@ https://auth.axissecurity.com/
 3) Create Connector:
 `New Connector`
 
+![Step 1](./images/new-connector-1.png)
 
+![Step 2](./images/new-connector-2.png)
 
-6) 
+![Step 3](./images/new-connector-3.png)
+
+![Step 4](./images/new-connector-4.png)
+
+❗ copy and save the one-time code generated to a text editor of your choice, one-time code is required for the initial activation ❗
 
 
 ⚙️ 🔥 🔨 
