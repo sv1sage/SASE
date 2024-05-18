@@ -14,18 +14,15 @@ Deploy Atmos Connector on Proxmox Virtual Environment
 - Atmos Connector Version: 3.51.1
 - Proxmox Virtual Environment Version: 8.2.2
 
-# 🚀 Installation
+# ⚙️ Installation
 
-<div style="color:rgb(226, 116, 0);">
-    ## TASK 1: Connect to the Management System of Axis Security:
-</div>
-
+## TASK 1: Connect to the Management System of Axis Security:
 
 ```text
 https://auth.axissecurity.com/
 ```
 
-## <span style="color:rgb(226, 116, 0);">TASK 2: Create Connector:</span>
+## TASK 2: Create Connector:
 `settings` ➡️ `connectors` ➡️ `New Connector`
 
 Step 1:
@@ -52,7 +49,13 @@ Step 5:
 
 ❗click on `copy` and save the one-time code generated to a text editor of your choice, one-time code is required for the initial activation❗
 
-## <span style="color:rgb(226, 116, 0);">TASK 3: Create a Virtual Machine for the Atmos Connector on Proxmox Virtual Environment:</span>
+Step 6:
+
+![Step 6](./images/new-connector-5.png)
+
+🔥 COMMIT CHANGES 🔥
+
+## TASK 3: Create a Virtual Machine for the Atmos Connector on Proxmox Virtual Environment:
 
 `ssh`as `root` to your Proxmox Virtual Environment instance and run following commands:
 
@@ -126,6 +129,7 @@ Step 3:
 Step 4:
 
 ![Step 4](./images/gui-vm-settings-4.png)
+
 💡Note: 
 - change the `Bridge`and `VLAN Tag:`values to match your network setup
 
@@ -149,8 +153,25 @@ Step 9:
 
 ![Step 9](./images/gui-vm-settings-9.png)
 
-## <span style="color:rgb(226, 116, 0);">TASK 4: Deploy the Atmos Connector on Proxmox Virtual Environment:</span>
+## TASK 4: Deploy the Atmos Connector on Proxmox Virtual Environment:
 
+Connect to the VM using Proxmox Virtual Environment `>_ Console` and complete the login with username `axis`and password `axis`.
 
+Run the one-time code generated in TASK 2 at Step 5.
 
-⚙️ 🔥 🔨 
+Example:
+```text
+sudo bash < <(curl -fsSL https://ops.axissecurity.com/TOKEN/install)
+```
+
+![Step 1](./images/atmos-connector-activation-1.png)
+
+Step 2:
+
+![Step 2](./images/atmos-connector-activation-2.png)
+
+Step 3:
+
+![Step 3](./images/atmos-connector-activation-3.png)
+
+## 🚀 ATMOS CONNECTOR UP AND RUNNING!
