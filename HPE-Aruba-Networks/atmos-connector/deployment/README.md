@@ -94,14 +94,6 @@ qm importovf 999 axis-connector-rocky-linux-9-nci-docker-v3.51.1.ovf local-lvm -
 
 🔨 Following `warning` messages can be ignored:
 ```text
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
 warning: unable to parse the VM name in this OVF manifest, generating a default value
 invalid host ressource /disk/vmdisk1, skipping
 ```
