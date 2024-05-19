@@ -13,9 +13,9 @@
 - [SAML IdP - authentik](./HPE-Aruba-Networking/identity-provider/authentik/README.md)
 
 ### ZERO TRUST - Agentless
-- [SSH - Linux Server](./HPE-Aruba-Networking/zero-trust-agentless/linux-server-ssh/README.md)
-- [HTTPS - Linux Server](./HPE-Aruba-Networking/zero-trust-agentless/linux-server-https/README.md)
-- [RDP - Linux Server](./HPE-Aruba-Networking/zero-trust-agentless/linux-server-rdp/README.md)
+- [SSH - Linux Server](./HPE-Aruba-Networking/zero-trust/agentless/linux-server-ssh/README.md)
+- [HTTPS - Linux Server](./HPE-Aruba-Networking/zero-trust/agentless/linux-server-https/README.md)
+- [RDP - Linux Server](./HPE-Aruba-Networking/zero-trust/agentless/linux-server-rdp/README.md)
 
 ### ZERO TRUST - Agent
-- [IP & PORT - Linux Server](./HPE-Aruba-Networking/zero-trust-agent/linux-server-ip&port/README.md)
+- [IP & PORT - Linux Server](./HPE-Aruba-Networking/zero-trust/agent/linux-server-ip&port/README.md)
