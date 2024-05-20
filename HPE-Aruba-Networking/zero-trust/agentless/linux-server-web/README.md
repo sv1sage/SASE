@@ -10,7 +10,6 @@ User requires `web` access from an `unmanaged device` to an `internal web server
 
 Requirements:
 - Identify the user
-- Single Sign-On experience
 - Access policy based on least privilege
 - Remove the `unmanaged device` from being placed onto the internal network with a client vpn
 
@@ -249,7 +248,9 @@ Navigate to `Settings` ➡️ `Destinations` ➡️ `New Application`
 
 ![Step 4](./images/self-hosted-application-4.png)
 
-5) Add a tag value, if you want to group self-hosted application to simplify the rule management
+5) Submit to create our `Self-Hosted Web Application`
+
+- Add a tag value, if you want to group self-hosted application to simplify the rule management
 
 💡keep in mind that grouping should still follow least privilege
 
@@ -268,7 +269,7 @@ Edit to match your setup:
 
 ![Step 1](./images/new-rule-1.png)
 
-Optional: Create a custom SSH profile
+⭐️ Optional: Create a custom 'Web Profile'
 
 ❗Important - commit changes❗
 Navigate to the top right and commit changes
@@ -277,3 +278,24 @@ Navigate to the top right and commit changes
 
 ## 🚀 ZERO TRUST ACCESS ENABLED!
 
+# What have we accomplished?
+
+- Identify the user
+
+✅ We verify the identitiy of the user using a trusted Identity Provider
+
+- Access policy based on least privilege!
+
+✅ Web access is limited to this user!
+
+- Remove the `unmanaged device` from being placed into the internal network with a client vpn
+
+✅ granted web-based access without granting internal network access!
+
+# User Experience
+
+![Step 1](./images/user-experience-1.png)
+
+![Step 2](./images/user-experience-2.png)
+
+![Step 3](./images/user-experience-3.png)
