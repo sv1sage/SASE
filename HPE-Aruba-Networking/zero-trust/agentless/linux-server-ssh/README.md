@@ -11,7 +11,7 @@ Requirements:
 - Identify the user
 - Single Sign-On experience
 - Access policy based on least privilege
-- Remove the `unmanaged device` from being placed into the internal network with a client vpn
+- Remove the `unmanaged device` from being placed onto the internal network with a client vpn
 
 # ✅ Prerequisites
 
@@ -134,12 +134,10 @@ User will be asked to enter the server credentials:
 
 ![Step 4](./images/self-hosted-application-4.png)
 
-
 User will be provided with a single sign-on experience:
 - Authentication method `username` and `password`
 
 ![Step 5](./images/self-hosted-application-5.png)
-
 
 - Authentication method `username` and `rsa key`
 
@@ -156,6 +154,7 @@ User will be provided with a single sign-on experience:
 ![Step 8](./images/self-hosted-application-8.png)
 
 - Add a tag value, if you want to group self-hosted application to simplify the rule management
+
 💡keep in mind that grouping should still follow least privilege
 
 ![Step 9](./images/self-hosted-application-9.png)
@@ -192,7 +191,7 @@ Navigate to the top right and commit changes
 
 - Single Sign-On experience!
 
-✅ seemless login
+✅ seamless login
 ⭐️ no server credentials are shared with the user by using the predefined credentials
 
 - Access policy based on least privilege!
@@ -212,7 +211,6 @@ Navigate to the top right and commit changes
 ![Step 3](./images/user-experience-3.png)
 
 ![Step 4](./images/user-experience-4.png)
-
 
 # ⭐️ BONUS ⭐️
 ## Administrator can lookup user performed actions
