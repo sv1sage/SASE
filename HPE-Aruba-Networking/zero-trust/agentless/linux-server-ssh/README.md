@@ -213,9 +213,8 @@ Navigate to the top right and commit changes
 
 ![Step 4](./images/user-experience-4.png)
 
-![Step 5](./images/user-experience-5.png)
 
-# BONUS
+# ⭐️ BONUS ⭐️
 ## Administrator can lookup user performed actions
 Navigate to `Insights` ➡️ `Dashboard` and select the session
 
