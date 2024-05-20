@@ -1,7 +1,9 @@
 [Axis Security]: https://www.axissecurity.com/schedule-a-demo/
 # What is this about?
-This is all about sharing with you 
-- my hands-on experience
+This is all about
+- sharing my hands-on experience
+- implementing customer use-cases inline with todays enterprise needs
+- provide a technical documentation to be used by you!
 
 ## Secure Access Service Edge powered by [Axis Security]
 
