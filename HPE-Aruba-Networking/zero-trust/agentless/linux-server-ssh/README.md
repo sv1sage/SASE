@@ -150,6 +150,7 @@ User will be provided with a single sign-on experience:
 ![Step 7](./images/self-hosted-application-7.png)
 
 - Select the `Identity Provider` the user or group is part of
+
 💡create an additional self-hosted application, if you want to use multiple identity provider
 
 ![Step 8](./images/self-hosted-application-8.png)
@@ -182,6 +183,8 @@ Navigate to the top right and commit changes
 ![Step 3](./images/commit-changes.png)
 
 ## 🚀 ZERO TRUST ACCESS ENABLED!
+
+# What have we accomplished?
 
 - Identify the user
 
