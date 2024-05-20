@@ -14,7 +14,7 @@
 
 ### ZERO TRUST - Agentless
 - [SSH - Linux Server](./HPE-Aruba-Networking/zero-trust/agentless/linux-server-ssh/README.md)
-- [WEBSERVER - Linux Server](./HPE-Aruba-Networking/zero-trust/agentless/linux-server-web/README.md)
+- [WEB - Linux Server](./HPE-Aruba-Networking/zero-trust/agentless/linux-server-web/README.md)
 - [RDP - Linux Server](./HPE-Aruba-Networking/zero-trust/agentless/linux-server-rdp/README.md)
 
 ### ZERO TRUST - Agent
