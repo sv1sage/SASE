@@ -11,7 +11,7 @@ Requirements:
 - Identify the user
 - Single Sign-On experience
 - Access policy based on least privilege
-- Unmanaged device must not be placed onto the internal network
+- Remove the `unmanaged device` from being placed into the internal network with a client vpn
 
 # ✅ Prerequisites
 
@@ -187,18 +187,18 @@ Navigate to the top right and commit changes
 
 ✅ We verify the identitiy of the user using a trusted Identity Provider
 
-- Single Sign-On experience
+- Single Sign-On experience!
 
 ✅ seemless login
 ⭐️ no server credentials are shared with the user by using the predefined credentials
 
-- Access policy based on least privilege
+- Access policy based on least privilege!
 
-✅ SSH access to the linux server is limited to this user
+✅ SSH access to the linux server is limited to this user!
 
-- Unmanaged device must not be placed onto the internal network
+- Remove the `unmanaged device` from being placed into the internal network with a client vpn
 
-✅ granted web-based access without the need to connect to the network with a client-vpn!
+✅ granted web-based access without granting internal network access!
 
 # User Experience
 
