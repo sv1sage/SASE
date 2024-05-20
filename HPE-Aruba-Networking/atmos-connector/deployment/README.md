@@ -16,13 +16,13 @@ Deploy Atmos Connector on Proxmox Virtual Environment
 
 # ⚙️ Installation
 
-## TASK 1: Connect to the Management System of Axis Security:
+## TASK 1: Connect to the Management System of Axis Security
 
 ```text
 https://manage.axissecurity.com/
 ```
 
-## TASK 2: Create Connector:
+## TASK 2: Create Connector
 `settings` ➡️ `connectors` ➡️ `New Connector`
 
 Step 1:
@@ -55,7 +55,7 @@ Step 6:
 
 🔥 COMMIT CHANGES 🔥
 
-## TASK 3: Create a Virtual Machine for the Atmos Connector on Proxmox Virtual Environment:
+## TASK 3: Create a Virtual Machine for the Atmos Connector on Proxmox Virtual Environment
 
 `ssh`as `root` to your Proxmox Virtual Environment instance and run following commands:
 
@@ -145,7 +145,7 @@ Step 9:
 
 ![Step 9](./images/gui-vm-settings-9.png)
 
-## TASK 4: Deploy the Atmos Connector on Proxmox Virtual Environment:
+## TASK 4: Deploy the Atmos Connector on Proxmox Virtual Environment
 
 Start the VM and connect using Proxmox Virtual Environment `>_ Console` and complete the login with username `axis` and password `axis`.
 
@@ -170,4 +170,4 @@ Step 3:
 
 ## 🚀 ATMOS CONNECTOR UP AND RUNNING!
 
-## OPTIONAL TASK 5: Change default username and password
+<!-- ## ⭐️ OPTIONAL TASK 5: Change default username and password -->

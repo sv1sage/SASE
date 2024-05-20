@@ -71,7 +71,7 @@ Recommended: Log out and log back in so that your group membership is re-evaluat
 
 💡Running `newgrp docker` to update priviliges did work only partially for me, I still experienced permission issue especially with Visual Studio Code extensions.
 
-## TASK 2: Create web server based on `nginx` with `docker`:
+## TASK 2: Create web server based on `nginx` with `docker`
 
 ### Create a new directory structure in your users home directory `docker/web-server/`:
 ```text
@@ -257,9 +257,10 @@ Navigate to `Settings` ➡️ `Destinations` ➡️ `New Application`
 ![Step 5](./images/self-hosted-application-5.png)
 
 ## TASK 4: Grant access by updating your Policy
+
 Navigate to `Poliicy` ➡️ `Rules` ➡️ `New Rule`
 
-Edit to match your setup:
+### Edit to match your setup:
 - `Name`
 - `Description`
 - `Identity`
