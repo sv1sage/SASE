@@ -51,7 +51,7 @@ echo \
 sudo apt-get update
 ```
 
-### Install the latest Docker packages:
+### Install the latest docker packages:
 ```text
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
@@ -213,8 +213,7 @@ curl localhost:80
 
 💡 It's working if the curl output matches our index.html content  
 
-
-## TASK 3: Create a `Self-Hosted Web Application` application
+## TASK 3: Add the internal web server as `Self-Hosted Web Application`
 
 ### Connect to the Management System of Axis Security:
 
@@ -225,6 +224,37 @@ https://manage.axissecurity.com/
 ### Create a 'Self-Hosted Application':
 Navigate to `Settings` ➡️ `Destinations` ➡️ `New Application`
 
+1) Enter web and select `Self-Hosted Web Application`
+
+![Step 1](./images/self-hosted-application-1.png)
+
+2) Edit to match your setup
+- `Name`
+- `Domain / IP Address`
+- change `Protocol` from `HTTPS` to `HTTP`
+- verify `Port` equals `80`
+- select your matching `Connector Zone`
+
+💡If domain is used validate your Atmos Connectors DNS configuration.
+
+![Step 2](./images/self-hosted-application-2.png)
+
+3) Choose to keep or change the generated subdomain
+
+![Step 3](./images/self-hosted-application-3.png)
+
+4) Select the `Identity Provider` the user or group is part of
+
+💡create an additional self-hosted application, if you want to use multiple identity provider
+
+![Step 4](./images/self-hosted-application-4.png)
+
+5) Add a tag value, if you want to group self-hosted application to simplify the rule management
+
+💡keep in mind that grouping should still follow least privilege
+
+![Step 5](./images/self-hosted-application-5.png)
+
 ## TASK 4: Grant access by updating your Policy
 Navigate to `Poliicy` ➡️ `Rules` ➡️ `New Rule`
 
@@ -234,4 +264,16 @@ Edit to match your setup:
 - `Identity`
 - `Destination`
 - change `Action` to `Allow`
-- Optional your created `SSH Profile`
+- Optional your created `Web Profile`
+
+![Step 1](./images/new-rule-1.png)
+
+Optional: Create a custom SSH profile
+
+❗Important - commit changes❗
+Navigate to the top right and commit changes
+
+![Step 1](./images/commit-changes.png)
+
+## 🚀 ZERO TRUST ACCESS ENABLED!
+
