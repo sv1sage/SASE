@@ -6,7 +6,7 @@
 
 # Use Case
 
-User requires `http` access from an `unmanaged device` to an `internal web server`.
+User requires `web` access from an `unmanaged device` to an `internal web server`.
 
 Requirements:
 - Identify the user
@@ -210,6 +210,9 @@ docker-compose up -d
 ```text
 curl localhost:80
 ```
+
+💡 It's working if the curl output matches our index.html content  
+
 
 ## TASK 3: Create a `Self-Hosted Web Application` application
 
